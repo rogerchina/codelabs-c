@@ -45,12 +45,4 @@ void testPraise1(void){
         printf("size_t is %ld.\n", sizeof(size_t));
         printf("long unsigned int is %ld.\n", sizeof(long unsigned int));
 }
-/*
- * 
- */
-int main(int argc, char** argv) {
-        //testTalkBack();
-        testPraise1();
-        return (EXIT_SUCCESS);
-}
 

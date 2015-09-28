@@ -14,11 +14,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "common.h" // customized function declarition header file.
+
 /*
  * 
  */
 int main(int argc, char** argv) {
 
+        testPraise1();
         return (EXIT_SUCCESS);
 }
 

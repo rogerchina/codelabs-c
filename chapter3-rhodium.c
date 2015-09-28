@@ -67,14 +67,14 @@ void testEscape(){
 /*
  * 
  */
-int mainX(int argc, char** argv) {
-
-        //firstProgram();
-        //testTypesize();
-        //testBadCountOfParameter();
-
-        testEscape();
-        
-        return (EXIT_SUCCESS);
-}
+//int mainX(int argc, char** argv) {
+//
+//        //firstProgram();
+//        //testTypesize();
+//        //testBadCountOfParameter();
+//
+//        testEscape();
+//        
+//        return (EXIT_SUCCESS);
+//}
 
