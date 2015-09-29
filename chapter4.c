@@ -14,8 +14,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
+#include<float.h>
+#include<limits.h>
 #define DENSITY 62.4
 #define PRAISE "What a super marvelous name!"
+#define PI 3.14159
 
 void testTalkBack(void){
         float weight, volume;
@@ -46,3 +49,27 @@ void testPraise1(void){
         printf("long unsigned int is %ld.\n", sizeof(long unsigned int));
 }
 
+void testConstant(void){
+        float area, circum, radius;
+        
+        printf("What is the radius of the pizza? \n");
+        scanf("%f", &radius);
+        area = PI * radius * radius;
+        circum = 2.0 * PI * radius;
+        printf("%ld\n", sizeof(2.0f));
+        printf("%ld, %ld\n", sizeof(float), sizeof(double));
+        printf("circum data type is float or double? type size is %ld.\n", sizeof(circum));
+        printf("Your basic pizza parameter as follow: \n");
+        printf("cirum is = %1.2f, area = %1.2f \n", circum, area);
+}
+
+/**
+ * test some common constant in limits.h and float.h header file.
+ */
+void testSystemPredefinedConstant(void){
+        printf("Max int value on this system is %d \n", INT_MAX);
+        printf("There are %d bits in one char.\n", CHAR_BIT);
+        printf("Long long min value is %lld.\n", LLONG_MIN);
+        printf("Max double value is %e.\n", DBL_MAX);
+        printf("Float has %d valid digits.\n", FLT_DIG);
+}

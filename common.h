@@ -20,7 +20,8 @@
  *  From chapter4.c file
  */
 void testPraise1(void);
-
+void testConstant(void);
+void testSystemPredefinedConstant(void);
 
 
 

@@ -21,7 +21,9 @@
  */
 int main(int argc, char** argv) {
 
-        testPraise1();
+        //testPraise1();
+       // testConstant();
+        testSystemPredefinedConstant();
         return (EXIT_SUCCESS);
 }
 
