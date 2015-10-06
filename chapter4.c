@@ -73,3 +73,25 @@ void testSystemPredefinedConstant(void){
         printf("Max double value is %e.\n", DBL_MAX);
         printf("Float has %d valid digits.\n", FLT_DIG);
 }
+
+#define NAME "roger"
+
+void testFormatModifier(void){
+        printf("*%s*\n", NAME);
+        printf("*%-10s*\n", NAME);
+        printf("*%10s*\n", NAME);
+        printf("*%2s*\n", NAME);
+        
+        float num = -10.0;
+        printf("%+6.2f \n", num);
+        printf("% 6.2f \n", num);
+        
+        int n = 20;
+        printf("%#o\n", n);
+        printf("%#x\n", n);
+        
+        float m = -30.1;
+        printf("*%#8.0f* \n", m);
+        printf("%+#10.3f \n" , m);
+        printf("%0#10.3f \n", m);
+}

@@ -22,6 +22,7 @@
 void testPraise1(void);
 void testConstant(void);
 void testSystemPredefinedConstant(void);
+void testFormatModifier(void);
 
 
 

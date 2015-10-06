@@ -23,7 +23,10 @@ int main(int argc, char** argv) {
 
         //testPraise1();
        // testConstant();
-        testSystemPredefinedConstant();
+        //testSystemPredefinedConstant();
+        testFormatModifier();
+        
+        
         return (EXIT_SUCCESS);
 }
 
