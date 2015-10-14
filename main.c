@@ -21,12 +21,12 @@
  */
 int main(int argc, char** argv) {
 
-        //testPraise1();
-       // testConstant();
-        //testSystemPredefinedConstant();
-        testFormatModifier();
+    //testPraise1();
+    //testConstant();
+    //testSystemPredefinedConstant();
+    testFormatModifier();
         
         
-        return (EXIT_SUCCESS);
+    return (EXIT_SUCCESS);
 }
 
