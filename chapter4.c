@@ -13,9 +13,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
-#include<float.h>
-#include<limits.h>
+#include <string.h>
+#include <float.h>
+#include <limits.h>
 #define DENSITY 62.4
 #define PRAISE "What a super marvelous name!"
 #define PI 3.14159
@@ -29,7 +29,7 @@ void testTalkBack(void) {
     scanf("%s", name);
     printf("%s, what's your weight in pound? \n", name);
     scanf("%f", &weight);
-    size = sizeof (name);
+    size = sizeof(name);
     letters = strlen(name);
     volume = weight / DENSITY;
     printf("Well, %s, your volume is %2.2f cube feet. \n", name, volume);
@@ -45,8 +45,8 @@ void testPraise1(void) {
     //        
     //        printf("name array string length is %ld, storage space is %ld.\n", strlen(name), sizeof(name));
     //        printf("PRAISE string length is %ld, storage space is %ld.\n", strlen(PRAISE), sizeof(PRAISE));
-    printf("size_t is %ld.\n", sizeof (size_t));
-    printf("long unsigned int is %ld.\n", sizeof (long unsigned int));
+    printf("size_t is %ld.\n", sizeof(size_t));
+    printf("long unsigned int is %ld.\n", sizeof(long unsigned int));
 }
 
 void testConstant(void) {
@@ -56,9 +56,9 @@ void testConstant(void) {
     scanf("%f", &radius);
     area = PI * radius * radius;
     circum = 2.0 * PI * radius;
-    printf("%ld\n", sizeof (2.0f));
-    printf("%ld, %ld\n", sizeof (float), sizeof (double));
-    printf("circum data type is float or double? type size is %ld.\n", sizeof (circum));
+    printf("%ld\n", sizeof(2.0f));
+    printf("%ld, %ld\n", sizeof (float), sizeof(double));
+    printf("circum data type is float or double? type size is %ld.\n", sizeof(circum));
     printf("Your basic pizza parameter as follow: \n");
     printf("cirum is = %1.2f, area = %1.2f \n", circum, area);
 }
