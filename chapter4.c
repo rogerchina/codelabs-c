@@ -94,4 +94,11 @@ void testFormatModifier(void) {
     printf("*%#8.0f* \n", m);
     printf("%+#10.3f \n", m);
     printf("%0#10.3f \n", m);
+    
+    getchar();
+}
+
+void testFloat(void){
+    long float a;
+    _Bool x;
 }
