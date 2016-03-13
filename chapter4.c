@@ -16,6 +16,7 @@
 #include <string.h>
 #include <float.h>
 #include <limits.h>
+#include <inttypes.h>
 #define DENSITY 62.4
 #define PRAISE "What a super marvelous name!"
 #define PI 3.14159
@@ -101,4 +102,5 @@ void testFormatModifier(void) {
 void testFloat(void){
     long float a;
     _Bool x;
+    uint32_t num;
 }
