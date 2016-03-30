@@ -21,12 +21,17 @@
  */
 int main(int argc, char** argv) {
     
+    // chapter2.c
     //printMyName();
     //printPersonalInfo();
     //print4th();
     //printToes() ;
-   // printSmile(3);
-    one_three();
+    //printSmile(3);
+    //one_three();
+    
+    // chapter3.c
+    //testInt() ;
+    print1();
     
     // testPraise1();
     // testConstant();

@@ -24,8 +24,14 @@ void printMyName(void);
 void printPersonalInfo(void);
 void print4th(void);
 void printToes(void);
-void printSmile(int) ;
- void one_three(void);
+void printSmile(int num);
+void one_three(void);
+void print1(void);
+
+/*
+ * chapter3-rhodium.c
+ */
+void testInt(void) ;
 
 
 /*

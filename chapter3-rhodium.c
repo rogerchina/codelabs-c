@@ -64,17 +64,17 @@ void testEscape() {
     printf("\rGee\n");
 }
 
-/*
- * 
- */
-//int mainX(int argc, char** argv) {
-//
-//        //firstProgram();
-//        //testTypesize();
-//        //testBadCountOfParameter();
-//
-//        testEscape();
-//        
-//        return (EXIT_SUCCESS);
-//}
+void testInt(void) {
+    int n = 1;
+    printf("int n has %ld bytes\n", sizeof(n));
+    printf("int has %ld bytes\n", sizeof(int));
+}
 
+void print1(void) {
+    int ten = 10;
+    int two = 2;
+    printf("doing it right: ");
+    printf("%d minus %d is %d\n", ten, two, ten-two);
+    printf("doing it wrong: ");
+    printf("%d minus %d is %d\n", ten);
+}
