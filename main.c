@@ -20,7 +20,14 @@
  * 
  */
 int main(int argc, char** argv) {
-
+    
+    //printMyName();
+    //printPersonalInfo();
+    //print4th();
+    //printToes() ;
+   // printSmile(3);
+    one_three();
+    
     // testPraise1();
     // testConstant();
     // testSystemPredefinedConstant();

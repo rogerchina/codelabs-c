@@ -100,7 +100,7 @@ void testFormatModifier(void) {
 }
 
 void testFloat(void){
-    long float a;
+    float a;
     _Bool x;
     uint32_t num;
 }

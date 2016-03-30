@@ -16,8 +16,20 @@
 
 
 /** Define function prototype**/
+
+/**
+ * chapter2.c
+ */
+void printMyName(void);
+void printPersonalInfo(void);
+void print4th(void);
+void printToes(void);
+void printSmile(int) ;
+ void one_three(void);
+
+
 /*
- *  From chapter4.c file
+ *  chapter4.c file
  */
 void testPraise1(void);
 void testConstant(void);
@@ -27,17 +39,11 @@ void testFormatModifier(void);
 
 
 
-
-
-
-
-
-
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-
+/* do something...*/
 
 
 #ifdef __cplusplus
