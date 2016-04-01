@@ -15,6 +15,8 @@
 #include <stdlib.h>
 #include<string.h>
 #include<inttypes.h>
+#include<limits.h>
+
 #define DENSITY 62.4
 
 void firstProgram() {
@@ -68,6 +70,14 @@ void testInt(void) {
     int n = 1;
     printf("int n has %ld bytes\n", sizeof(n));
     printf("int has %ld bytes\n", sizeof(int));
+    
+    long int m = 1;
+    printf("long int n has %ld bytes\n", sizeof(m));
+    printf("long int has %ld bytes\n", sizeof(long int));
+    
+    long long int c = 1;
+    printf("long long int n has %ld bytes\n", sizeof(c));
+    printf("long long int has %ld bytes\n", sizeof(long long int));
 }
 
 void print1(void) {
@@ -77,4 +87,32 @@ void print1(void) {
     printf("%d minus %d is %d\n", ten, two, ten-two);
     printf("doing it wrong: ");
     printf("%d minus %d is %d\n", ten);
+}
+
+void  printBase(void) {
+    int n = 8;
+    printf("decimal = %d; octal = %o; hex = %x;\n", n, n, n);
+    printf("decimal = %d; octal = %#o; hex = %#x\n", n, n, n);
+}
+
+void printTooBig(void) {
+    int i = 2147483647;
+    unsigned int j = 4294967295;
+    
+    printf("%d  %d  %d\n", i, i+1, i+2);
+    printf("%u  %u  %u\n", j, j+1, j+2);
+}
+
+void printNotPrintChar(void) {
+    char c = '\007';
+    printf("%c\n", c);
+    
+    printf("Hello! \007 \n");
+}
+
+void printCharCode(void) {
+    char ch;
+    printf("Please enter a character: \n");
+    scanf("%c", &ch);
+    printf("the code for %c is %d\n", ch, ch);
 }

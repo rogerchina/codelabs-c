@@ -32,7 +32,10 @@ void print1(void);
  * chapter3-rhodium.c
  */
 void testInt(void) ;
-
+void  printBase(void) ;
+void printTooBig(void) ;
+void printNotPrintChar(void) ;
+void printCharCode(void) ;
 
 /*
  *  chapter4.c file

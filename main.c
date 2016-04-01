@@ -31,7 +31,11 @@ int main(int argc, char** argv) {
     
     // chapter3.c
     //testInt() ;
-    print1();
+    //print1();
+    //printBase();
+    //printTooBig();
+    //printNotPrintChar();
+    printCharCode();
     
     // testPraise1();
     // testConstant();
