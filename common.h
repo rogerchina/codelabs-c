@@ -36,6 +36,16 @@ void  printBase(void) ;
 void printTooBig(void) ;
 void printNotPrintChar(void) ;
 void printCharCode(void) ;
+void printAltName(void);
+void printTooBig2(void);
+void floatErr(void);
+void printTypeSize(void);
+void printEscape(void);
+void testIntOverflow(void);
+void printDataType(void);
+void printSomeType(void);
+void printEnterChar(void);
+void testFloatOverflow(void);
 
 /*
  *  chapter4.c file
@@ -44,6 +54,7 @@ void testPraise1(void);
 void testConstant(void);
 void testSystemPredefinedConstant(void);
 void testFormatModifier(void);
+
 
 
 
