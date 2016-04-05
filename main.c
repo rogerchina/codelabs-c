@@ -35,7 +35,17 @@ int main(int argc, char** argv) {
     //printBase();
     //printTooBig();
     //printNotPrintChar();
-    printCharCode();
+    //printCharCode();
+    //printAltName();
+    //printTooBig2();
+    //floatErr();
+    //printTypeSize();
+    //printEscape();
+    //testIntOverflow();
+    //printDataType();
+    //printSomeType();
+    //printEnterChar();
+    testFloatOverflow();
     
     // testPraise1();
     // testConstant();
