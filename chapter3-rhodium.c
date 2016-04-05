@@ -116,3 +116,138 @@ void printCharCode(void) {
     scanf("%c", &ch);
     printf("the code for %c is %d\n", ch, ch);
 }
+
+void printAltName(void) {
+    int16_t me16;
+    me16 = 4593;
+    printf("First assume int16_t is short: ");
+    printf("me16 = %hd\n", me16);
+    printf("Next, let's not make any assumptions.\n");
+    printf("Instead, use a \"macro\" from inittypes.h: ");
+    printf("me16 = %" PRId16 "\n", me16);
+}
+
+void printTooBig2(void) {
+    float toobig = 3.4E38 * 100.0f;
+    printf("%e\n", toobig);
+}
+
+void floatErr(void) {
+    float a, b, c;
+    //c = 2.0e20;
+    c = 2.0e4;
+    b = c + 1.0;
+    a = b - c;
+    printf("%f \n",  a);
+}
+
+void printTypeSize(void) {
+    printf("Type char has a size %lu bytes. \n", sizeof(char));
+    printf("Type short has a size %lu bytes. \n", sizeof(short));
+    printf("Type int has a size %lu bytes. \n", sizeof(int));
+    printf("Type long has a size %lu bytes. \n", sizeof(long));
+    printf("Type long long has a size %lu bytes. \n", sizeof(long long));
+    
+    printf("Type float has a size %lu bytes. \n", sizeof(float));
+    printf("Type double has a size %lu bytes. \n", sizeof(double));
+}
+
+void printEscape(void) {
+    float salary;
+    printf("\aEnter your desired monthly salary: ");
+    printf(" $_______\b\b\b\b\b\b\b");
+    scanf("%f", &salary);
+    printf("\n\t$%.2f a month is $%.2f a year.", salary, salary * 12.0);
+    printf("\rGee\n");
+}
+
+void testIntOverflow(void) {
+    
+    // for unsigned
+    //unsigned char ch = 255;
+    // for signed
+    signed char ch = 127;
+    ch += 1;
+    printf("ch + 1 = %d", ch);
+}
+
+void testFloatOverflow(void) {
+    //overflow
+    float toobig = 3.4e38 * 100.0f;
+    printf("toobig = %e\n", toobig);
+    
+    //underflow
+    //TODO: 
+}
+
+void printDataType(void) {
+    //12
+    int a1 = 12;
+    short a2 = 12;
+    char a3 = 12;
+    printf("a1=%d, a2=%hd, a3=%d\n", a1, a2, a3);
+    
+    //0x3
+    int b1 = 0x3;
+    printf("b1=%#x\n", b1);
+    
+    //'C'
+    char c1 = 'C' ;
+    printf("c1 = %c\n", c1);
+    
+    //2.34e07
+    float d = 2.34e07;
+    printf("d = %.2e\n", d);
+    
+    //'\040' --> 32
+    char e = '\040';
+    printf("e = %c\n", e);
+    
+    //7.0
+    float f = 7.0;
+    double f1 = 7.0;
+    printf("f = %.1f\n", f);
+    printf("f1 = %.1f\n", f1);
+    
+    //6L
+    long int g = 812L;
+    printf("g = %ld\n", g);
+    //printf("g = %.1f\n", g); //error formate identifier
+}
+
+void printSomeType(void) {
+    int imate = 2;
+    long shot = 53456;
+    char grade = 'A';
+    float log = 2.71828;
+    printf("The odds against the %d were %ld to 1.\n", imate, shot);
+    printf("A score of %.5f is not an %c grade. \n", log, grade);
+}
+
+void printEnterChar(void) {
+    // method-1
+    char ch = '\n';
+    printf("have a look at effect: %c", ch);
+    printf("hello");
+    
+    printf("\n");
+    
+    // method-2
+    char ch2 = 10;
+    printf("have a look at effect: %c", ch2);
+    printf("hello");
+    
+    printf("\n");
+    
+    // method-3
+    char ch3 = '\012';
+    printf("have a look at effect: %c", ch3);
+    printf("hello");
+    
+    printf("\n");
+    
+    // method-4
+    char ch4 = '\xA';
+    printf("have a look at effect: %c", ch4);
+    printf("hello");
+}
