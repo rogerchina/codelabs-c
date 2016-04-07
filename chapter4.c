@@ -39,15 +39,21 @@ void testTalkBack(void) {
 }
 
 void testPraise1(void) {
-    //        char name[40];
-    //        scanf("%s", name);
-    //        printf("Hello, %s, %s \n", name, PRAISE);
-    //        printf("function terminated!\n");
-    //        
-    //        printf("name array string length is %ld, storage space is %ld.\n", strlen(name), sizeof(name));
-    //        printf("PRAISE string length is %ld, storage space is %ld.\n", strlen(PRAISE), sizeof(PRAISE));
-    printf("size_t is %ld.\n", sizeof(size_t));
-    printf("long unsigned int is %ld.\n", sizeof(long unsigned int));
+    char name[40];
+    printf("What's your name? \n");
+    scanf("%s", name);
+    printf("Hello, %s, %s \n", name, PRAISE);
+
+    printf("name array string length is %ld, storage space is %ld.\n", strlen(name), sizeof(name));
+    printf("PRAISE string length is %ld, storage space is %ld.\n", strlen(PRAISE), sizeof(PRAISE));
+}
+
+#define PRAISE2 "What a super marvelous name!"
+
+void testPraise2(void) {
+    printf("charactor x=%c, charactor string x=%s \n", 'x',"x");
+    
+    printf("char x has %ld bits, char string x has %ld bits. \n", sizeof('x'), sizeof("x"));
 }
 
 void testConstant(void) {

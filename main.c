@@ -45,12 +45,16 @@ int main(int argc, char** argv) {
     //printDataType();
     //printSomeType();
     //printEnterChar();
-    testFloatOverflow();
+    //testFloatOverflow();
     
-    // testPraise1();
+    //chapter4.c
+    //testTalkBack();
+    testPraise1();
+    //testPraise2();
     // testConstant();
     // testSystemPredefinedConstant();
     // testFormatModifier();  
+    
         
     return (EXIT_SUCCESS);
 }
