@@ -38,7 +38,9 @@ void testTalkBack(void) {
     printf("and we have %d bytes to store it in. \n", size);
 }
 
-void testPraise1(void) {
+#define PRAISE2 "What a super marvelous name!"
+
+void testPraise2(void) {
     char name[40];
     printf("What's your name? \n");
     scanf("%s", name);
@@ -48,11 +50,8 @@ void testPraise1(void) {
     printf("PRAISE string length is %ld, storage space is %ld.\n", strlen(PRAISE), sizeof(PRAISE));
 }
 
-#define PRAISE2 "What a super marvelous name!"
-
-void testPraise2(void) {
+void testPraise1(void) {
     printf("charactor x=%c, charactor string x=%s \n", 'x',"x");
-    
     printf("char x has %ld bits, char string x has %ld bits. \n", sizeof('x'), sizeof("x"));
 }
 

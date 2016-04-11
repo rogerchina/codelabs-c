@@ -32,7 +32,7 @@ void print1(void);
  * chapter3-rhodium.c
  */
 void testInt(void) ;
-void  printBase(void) ;
+void printBase(void) ;
 void printTooBig(void) ;
 void printNotPrintChar(void) ;
 void printCharCode(void) ;
@@ -50,10 +50,13 @@ void testFloatOverflow(void);
 /*
  *  chapter4.c file
  */
+void testTalkBack(void);
 void testPraise1(void);
+void testPraise2(void);
 void testConstant(void);
 void testSystemPredefinedConstant(void);
 void testFormatModifier(void);
+
 
 
 
