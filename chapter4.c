@@ -109,3 +109,25 @@ void testFloat(void){
     _Bool x;
     uint32_t num;
 }
+
+#define PI 3.14159
+void testPizza(void) {
+    float area, circum, radius;
+    printf("What is the radius of your pizzas?\n");
+    scanf("%f", &radius);
+    area = PI * radius * radius;
+    circum = 2.0 * PI * radius;
+    printf("Your basic pizza parameters as follows:\n");
+    printf("circum is %1.2f, ares is %1.2f\n", circum, area);
+}
+
+void testConstantInLimitsHeader(void) {
+    printf("Maximum int value on this system = %d\n", INT_MAX);
+    printf("Minimum int value on this system = %d\n", INT_MIN);
+    
+    printf("Maximum short int value on this system = %d\n", SHRT_MAX);
+    printf("Minimum short int value on this system = %d\n", SHRT_MIN);
+    
+    printf("Maximum long int value on this system = %ld\n", LONG_MAX);
+    printf("Minimum long int value on this system = %ld\n", LONG_MIN);
+}

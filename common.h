@@ -56,7 +56,8 @@ void testPraise2(void);
 void testConstant(void);
 void testSystemPredefinedConstant(void);
 void testFormatModifier(void);
-
+void testPizza(void);
+void testConstantInLimitsHeader(void);
 
 
 

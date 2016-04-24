@@ -49,12 +49,13 @@ int main(int argc, char** argv) {
     
     //chapter4.c
     //testTalkBack();
-    testPraise1();
+    //testPraise1();
     //testPraise2();
-    // testConstant();
-    // testSystemPredefinedConstant();
-    // testFormatModifier();  
-    
+    //testConstant();
+    //testSystemPredefinedConstant();
+    //testFormatModifier();  
+    //testPizza();
+    testConstantInLimitsHeader();
         
     return (EXIT_SUCCESS);
 }
