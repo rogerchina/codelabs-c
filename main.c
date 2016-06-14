@@ -55,7 +55,8 @@ int main(int argc, char** argv) {
     //testSystemPredefinedConstant();
     //testFormatModifier();  
     //testPizza();
-    testConstantInLimitsHeader();
+    //testConstantInLimitsHeader();
+    testDefines();
         
     return (EXIT_SUCCESS);
 }

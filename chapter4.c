@@ -131,3 +131,13 @@ void testConstantInLimitsHeader(void) {
     printf("Maximum long int value on this system = %ld\n", LONG_MAX);
     printf("Minimum long int value on this system = %ld\n", LONG_MIN);
 }
+
+void testDefines(void) {
+    printf("Some number limits for this system: \n");
+    printf("Biggest int: %d\n", INT_MAX);
+    printf("Smallest unsigned long: %lld\n", LLONG_MIN);
+    printf("One byte = %d on this system.\n", CHAR_BIT);
+    printf("Largest double: %e\n", DBL_MAX);
+    printf("Smallest normal float: %e\n", FLT_MIN);
+}
+
