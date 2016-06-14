@@ -58,6 +58,7 @@ void testSystemPredefinedConstant(void);
 void testFormatModifier(void);
 void testPizza(void);
 void testConstantInLimitsHeader(void);
+void testDefines(void);
 
 
 
