@@ -4,11 +4,11 @@ project(codelabs_c)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        chapter2.c
-        chapter3-rhodium.c
-        chapter4.c
-        common.h
-        main.c
+        src/chapter2.c
+        src/chapter3-rhodium.c
+        src/chapter4.c
+        src/common.h
+        src/main.c
         README.md)
 
 add_executable(codelabs_c ${SOURCE_FILES})
