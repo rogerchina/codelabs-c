@@ -112,7 +112,7 @@ void testPizza(void) {
     area = PI * radius * radius;
     circum = 2.0 * PI * radius;
     printf("Your basic pizza parameters as follows:\n");
-    printf("circum is %1.2f, ares is %1.2f\n", circum, area);
+    printf("circus is %1.2f, ares is %1.2f\n", circum, area);
 }
 
 void testConstantInLimitsHeader(void) {
