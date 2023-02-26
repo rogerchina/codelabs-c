@@ -11,6 +11,7 @@
 #include "common.h" // customized function declaration header file.
 
 int main(int argc, char** argv) {
+    testArray();
     
     // chapter2.c
     //printMyName();

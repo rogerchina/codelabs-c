@@ -11,6 +11,9 @@
 
 /** Define function prototype**/
 
+void testArray(void);
+
+
 /**
  * chapter2.c
  */
