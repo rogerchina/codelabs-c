@@ -11,13 +11,3 @@ aux_source_directory(./src/array DIR_SRCS)
 
 # 指定生成目标
 add_executable(codelabs_c ${DIR_SRCS})
-
-#set(SOURCE_FILES
-#        src/chapter2.c
-#        src/chapter3-rhodium.c
-#        src/chapter4.c
-#        src/common.h
-#        src/main.c
-#        README.md)
-#
-#add_executable(codelabs_c ${SOURCE_FILES})
